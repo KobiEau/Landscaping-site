@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif */
+}
+
+body{
+     width: 100vw;
+    height: 100vh; 
+    overflow-x: hidden;
+}
+/* Navbar Styling */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 4rem;
+    background-color: #000000da;
+    color: white;
+    align-items: center;
+    font-size: 1.09rem;
+    flex-wrap: wrap;
+    flex: auto;
+    
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    column-gap: 1rem;
+}
+
+nav input{
+    padding: 0.3rem 1.3rem;
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 100px;
+    background-color: transparent;
+    color: white;
+}
+
+input::placeholder{
+    color: white;
+}
+
+input:focus{
+    border: transparent;
+}
+
+/* Hero Section */
+#hero{
+    background-image: url("./Assets/hero_image.jpg");
+    height: 90vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; /*or 50% 50%*/
+}
+
+/*vh and vw are relative to the device's height and width  */
+     /* Percentages are used when in relation to the parent elements height and width values */
+
+#hero-overlay{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    row-gap: 12px;
+}
+
+#hero-overlay p{
+    color: white;
+    font-size: 1.1rem;
+    margin-left: 12%;
+    max-width: 450px;
+}
+
+#hero-overlay h1{
+    color: white;
+    font-size: 3rem;
+    /* margin-top: 6px; */
+    margin-bottom: 30px;
+    margin-left: 12%;
+    max-width: 570px;
+    /* text-transform: uppercase; */
+    font-weight: 700;
+}
+
+.primary-btn{
+    /* width: 130px; */
+    width: fit-content;
+    padding:15px 25px;
+    margin-left: 12%;
+    border-radius: 90px;
+    border: 1px solid rgb(35, 170, 35);
+    color: white;
+    background-color: rgb(35, 170, 35);
+}
+
+.primary-btn:hover{
+    cursor: pointer;
+    text-decoration: overline;
+    background-color: transparent;
+}
+
+/* Features Section*/
+#features {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 10%;
+    column-gap: 2.3rem;
+    align-items: center;
+}
+
+#features .feat-right{
+    width: 40%;
+    border: 1px solid rgb(35, 170, 35);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+}
+
+#features .feat-right img{
+    /* 100% of the parent's width */
+    width: 100%;
+}
+
+#features .feat-right .primary-btn{
+     margin-left: 0;
+}
+
+#features .feat-right .primary-btn:hover{
+    color: black;
+}
+
+#features .feat-left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#features-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 30px;
+}
+
+#features-card div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: rgb(227, 226, 223);
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 30px;
+}
+
+/* Projects Picture */
+#horizontal-picture{
+    background-image: url("./Assets/garden-1266320_1920.jpg");
+    width: 100vw;
+    height: 30vh;
+    background-size: cover;
+    background-position: 50% 40%;
+    position: relative;
+}
+
+#horizontal-picture-overlay{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(35, 170, 35, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#horizontal-picture-overlay h3{
+    color: white;
+    width: fit-content;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Projects Stats */
+#project-stats{
+    position: absolute;
+    background-color: #ffffff;
+    width: 81%;
+    height: 130px;
+    top: 80%;
+    left: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 90px;
+    padding-left: 25px;
+    min-height: 0;
+}
+
+.stat-details{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+.stat-details .stat-number{
+    font-size: 2.5rem;
+}
+
+.stat-details .stat-divider{
+    width: 20%;
+    height: 3px;
+    background-color: rgb(35, 170, 35);
+    border: none;
+}
