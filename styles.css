@@ -217,7 +217,7 @@ input:focus{
     top: 80%;
     left: 10%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     column-gap: 90px;
     padding-left: 25px;
